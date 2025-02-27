@@ -1,0 +1,118 @@
+/* *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.container{
+    text-align: center;
+}
+.cell_container{
+    display: grid;
+    grid-template-columns: repeat(3 ,auto);
+    width: 225px;
+    margin: auto;
+}
+#status ,h1{
+    font-size: 60px;
+}
+button{
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+}
+.box{
+    width: 75px;
+    height: 75px;
+    border: 2px solid rgb(248, 246, 246);
+    box-shadow: 0 0 0 2px;
+    font-size: 50px;
+    cursor: pointer;
+} */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 60px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.cell_container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 247px;
+    margin: auto;
+    gap: 5px;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.box {
+    width: 75px;
+    height: 75px;
+    border: 2px solid #fff;
+    background-color: #f0f0f0;
+    font-size: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.box:hover {
+    background-color: #ddd;
+}
+
+#status {
+    font-size: 30px;
+    color: #333;
+    margin: 20px 0;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Additional styles for X and O */
+.box[data-player="X"] {
+    color: #ff4d4d;
+}
+
+.box[data-player="O"] {
+    color: #4d94ff;
+}
